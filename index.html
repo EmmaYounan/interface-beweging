@@ -1,56 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js" lang="">
 
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body class="bg">
-    <div class="box" id="contentBox">
-        <div class="content" id="calltoaction"><span class="start">Click to view</span>
-            <p id="made">Made by: Emma Younan</p>
-            <p class="credits">Credits to: 
-            <a href="https://github.com/superstephan1" target="_blank">Stephan Kop</a> 
-            for creating the base code.</p>
-        </div>
+  <div class="box" id="contentBox">
+  <div class="content" id="calltoaction"><span class="start">Click to view</span> <br><br><p>Animation by Emma Younan</p><p class="credits">Credits to: <a href="https://github.com/superstephan1" target="_blank">Stephan Kop</a> for creating the project format.</p></div>
+</div>
+  <div id="container">
+    <div id="animation">
+      <video id="transition" class="transition" style="opacity: 0" muted>
+        <source src="./img/wake.mp4" type="video/mp4" />
+      </video>
+      <video id="animateGif" class="fade-in"loop>
+        <source src="./img/wake.mp4" type="video/mp4" />
+      </video>
+      <video id="video" class="hidden" loop>
+        <source src="./img/start.mp4" type="video/mp4" />
+      </video>
     </div>
 
-    <div id="container">
-        <div id="container">
-            <div id="animation">
-                <video id="transition" class="transition" style="opacity: 0">
-                    <source src="images/start.mp4" type="video/mp4"/>
-                </video>
-                <video id="animateGif" class="fade-in" loop>
-                    <source src="images/fly.mp4" type="video/mp4" />
-                </video>
-                <video id="video" class="hidden" >
-                    <source src="images/glowwww.mp4" type="video/mp4" />
-                </video>
-            </div>
+    <div id="buttons">
+      <a id="button1">
+        <img id="preview1" class="testpreview" src="./img/awake-button.png">
+        <img class="testButton" src="./img/awake-button.gif">
+      </a>
+      <a id="button2">
+        <img id="preview2" class="testpreview" src="./img/wings-button.png">
+        <img class="testButton" src="./img/wings-button.gif">
+      </a>
+      <a id="button3">
+        <img id="preview3" class="testpreview" src="./img/glow-button.png">
+        <img class="testButton" src="./img/glow-button.gif">
+      </a>
+    </div>
+  </div>
 
-            <div id="buttons">
-                <a id="button1">
-                    <img id="preview1" class="testpreview" src=images/awake-button.png>
-                    <img class="testButton" src=images/awake-button.gif>
-                </a>
-                <a id="button2">
-                    <img id="preview2" class="testpreview" src=images/wings-button.png>
-                    <img class="testButton" src="images/wings-button.gif">
-                </a>
-                <a id="button3">
-                    <img id="preview3" class="testpreview" src="images/glow-button.png">
-                    <img class="testButton" src="images/glow-button.gif">
-                </a>
-            </div>
-        </div>
-
-        <script src="js/main.js"> </script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
